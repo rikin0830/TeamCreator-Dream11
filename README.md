@@ -34,7 +34,7 @@ So let's talk about Point-1 first:<br/>
 I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)<br/>
 Write "create" in the first line of the input file (INPUT.txt in my case)<br/>
 Then in the next 22 lines write name of each player(without spaces)<br/>
-The first 11 lines should contain playing 11 of 1 team and the next 11 players should be of the other team <br/>
+(NOTE::The first 11 lines should contain playing 11 of 1 team and the next 11 players should be of the other team.) <br/>
 Case-(1):In case the code doesn't find a player mentioned in the input file,<br/>
 The code doesn't execute and gives the names of players who weren't found.<br/>
 Case-(2):The code finds all players in the csv file and executes and prints the best 5 teams to OUTPUT.txt<br/>
