@@ -1,98 +1,98 @@
 # Project1
 # Brief intro
-A C++ code which creates the top 5 Dream-11 teams(on the basis of stats) for a cricket match.
-All we can do to predict the future is to look at the past.
-Even ML models are trained on training data sets(based on past) before using them on testing data sets(to predict the future).
+A C++ code which creates the top 5 Dream-11 teams(on the basis of stats) for a cricket match.<br/>
+All we can do to predict the future is to look at the past.<br/>
+Even ML models are trained on training data sets(based on past) before using them on testing data sets(to predict the future).<br/>
 
 # Requirements:
-If you are a fan of cricket and know about Dream 11, with a little bit of C++ knowledge, we can get along very easily in using this code.
+If you are a fan of cricket and know about Dream 11, with a little bit of C++ knowledge, we can get along very easily in using this code.<br/>
 
 # Purpose of this project:
-As we both know, there are many dream11 teams possible for a given match.
-Using simple math and the rule of minimum 4 players from each team,we can calculate the max number of teams possible is 644688.
-Note that we still didnt add constraints on total cost of team(<=100) and mininum and maximum from each category and we haven't even decided                        Captain and Vice-Captain yet.
-644688 maybe a big number for us,but for cpp compiler it isn't.
-So we are going to use its power and give the playing 22 as input and extract the best 5 teams possible by considering all possible constraints.
+As we both know, there are many dream11 teams possible for a given match.<br/>
+Using simple math and the rule of minimum 4 players from each team,we can calculate the max number of teams possible is 644688.<br/>
+Note that we still didnt add constraints on total cost of team(<=100) and mininum and maximum from each category and we haven't even decided                        Captain and Vice-Captain yet.<br/>
+644688 maybe a big number for us,but for cpp compiler it isn't.<br/>
+So we are going to use its power and give the playing 22 as input and extract the best 5 teams possible by considering all possible constraints.<br/>
 
 # Overview:
-I built a database/csv file using previous IPL stats from iplt20.com,
-In the case of a player who didn't play previous IPL I manually checked his profile and added an approxiamate analysis based entry to the database.
-The csv file consists of 5 columns:
-Column1 - Name of player
-Column3 - Number of matches played recently 
-Column2 - Avg points in those matches
-Column4 - Cost of player in Dream11.
-Column5 - Role of the player(0 for wk,1 for batsman,2 for all-rounder,3 for bowler)
+I built a database/csv file using previous IPL stats from iplt20.com,<br/>
+In the case of a player who didn't play previous IPL I manually checked his profile and added an approxiamate analysis based entry to the database.<br/>
+The csv file consists of 5 columns:<br/>
+Column1 - Name of player<br/>
+Column3 - Number of matches played recently <br/>
+Column2 - Avg points in those matches<br/>
+Column4 - Cost of player in Dream11.<br/>
+Column5 - Role of the player(0 for wk,1 for batsman,2 for all-rounder,3 for bowler)<br/>
 
 # How to use the code?
-There are 2 aspects to the code that I wrote:
-1. Create best 5 teams by giving playing 22(playing 22 is generally revealed after toss)
-2. Updating database after the match. (This is important because some player's stats might be bad but he is performing excellent this IPL or vice versa)
+There are 2 aspects to the code that I wrote:<br/>
+1. Create best 5 teams by giving playing 22(playing 22 is generally revealed after toss)<br/>
+2. Updating database after the match. (This is important because some player's stats might be bad but he is performing excellent this IPL or vice versa)<br/>
 
-So let's talk about Point-1 first:
+So let's talk about Point-1 first:<br/>
 # How to use the code for generating best 5 teams?
-I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)
-Write "create" in the first line of the input file (INPUT.txt in my case)
-Then in the next 22 lines write name of each player(without spaces)
-Case-(1):In case the code doesn't find a player mentioned in the input file,
-The code doesn't execute and gives the names of players who weren't found.
-Case-(2):The code finds all players in the csv file and executes and prints the best 5 teams to OUTPUT.txt
+I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)<br/>
+Write "create" in the first line of the input file (INPUT.txt in my case)<br/>
+Then in the next 22 lines write name of each player(without spaces)<br/>
+Case-(1):In case the code doesn't find a player mentioned in the input file,<br/>
+The code doesn't execute and gives the names of players who weren't found.<br/>
+Case-(2):The code finds all players in the csv file and executes and prints the best 5 teams to OUTPUT.txt<br/>
 
-SampleInput for team creation:
-create
+SampleInput for team creation:<br/>
+create<br/>
 DavidWarner<br/>
-JonnyBairstow
-ManishPandey
-PriyamGarg
-VijayShankar
-MitchellMarsh
-AbhishekSharma
-RashidKhan
-BhuvneshwarKumar
-SandeepSharma
-Natarajan
-AaronFinch
-ViratKohli
-AbdeVilliers
-DevduttPadikkal
-ShivamDube
-WashingtonSundar
-UmeshYadav
-DaleSteyn
-NavdeepSaini
-YuzvendraChahal
-JoshPhillipe
+JonnyBairstow<br/>
+ManishPandey<br/>
+PriyamGarg<br/>
+VijayShankar<br/>
+MitchellMarsh<br/>
+AbhishekSharma<br/>
+RashidKhan<br/>
+BhuvneshwarKumar<br/>
+SandeepSharma<br/>
+Natarajan<br/>
+AaronFinch<br/>
+ViratKohli<br/>
+AbdeVilliers<br/>
+DevduttPadikkal<br/>
+ShivamDube<br/>
+WashingtonSundar<br/>
+UmeshYadav<br/>
+DaleSteyn<br/>
+NavdeepSaini<br/>
+YuzvendraChahal<br/>
+JoshPhillipe<br/>
 
 # How to update the database after the match?
-I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)
-Write "update" in the first line of INPUT.txt,which is followed by 22 lines containing each player and number of points earned by him in that match.
-Case-(1): Due to typo,the player might not be found in the csv file. 
-In that case the cod edoesn't execute at all and just reports all the players who weren't found in the csv file.
-Case-(2): The code finds that all 22 players are available in the csv file,
-So it updates "avg points" aka Column 2 and "number of innings" aka Column 3 for each player.
+I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)<br/>
+Write "update" in the first line of INPUT.txt,which is followed by 22 lines containing each player and number of points earned by him in that match.<br/>
+Case-(1): Due to typo,the player might not be found in the csv file. <br/>
+In that case the cod edoesn't execute at all and just reports all the players who weren't found in the csv file.<br/>
+Case-(2): The code finds that all 22 players are available in the csv file,<br/>
+So it updates "avg points" aka Column 2 and "number of innings" aka Column 3 for each player.<br/>
 
-SampleInput(Based on match on 21 sept 2020)for updating database:
+SampleInput(Based on match on 21 sept 2020)for updating database:<br/>
 
-update
-DavidWarner 11
-JonnyBairstow 101
-ManishPandey 49
-PriyamGarg 17
-VijayShankar 27
-MitchellMarsh 2
-AbhishekSharma 37
-RashidKhan 19
-BhuvneshwarKumar 4
-SandeepSharma 12
-Natarajan 32
-AaronFinch 38
-ViratKohli 34
-AbdeVilliers 71
-DevduttPadikkal 76 
-ShivamDube 63 
-WashingtonSundar 4 
-UmeshYadav 16
-DaleSteyn 27
-NavdeepSaini 62
-YuzvendraChahal 83 
-JoshPhillipe 11
+update<br/>
+DavidWarner 11<br/>
+JonnyBairstow 101<br/>
+ManishPandey 49<br/>
+PriyamGarg 17<br/>
+VijayShankar 27<br/>
+MitchellMarsh 2<br/>
+AbhishekSharma 37<br/>
+RashidKhan 19<br/>
+BhuvneshwarKumar 4<br/>
+SandeepSharma 12<br/>
+Natarajan 32<br/>
+AaronFinch 38<br/>
+ViratKohli 34<br/>
+AbdeVilliers 71<br/>
+DevduttPadikkal 76 <br/>
+ShivamDube 63 <br/>
+WashingtonSundar 4 <br/>
+UmeshYadav 16<br/>
+DaleSteyn 27<br/>
+NavdeepSaini 62<br/>
+YuzvendraChahal 83 <br/>
+JoshPhillipe 11<br/>
