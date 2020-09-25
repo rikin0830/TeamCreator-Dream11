@@ -38,7 +38,8 @@ Case-(1):In case the code doesn't find a player mentioned in the input file,<br/
 The code doesn't execute and gives the names of players who weren't found.<br/>
 Case-(2):The code finds all players in the csv file and executes and prints the best 5 teams to OUTPUT.txt<br/>
 
-SampleInput for team creation:<br/>
+SampleInput -1 :<br/>
+----------------------
 create<br/>
 DavidWarner<br/>
 JonnyBairstow<br/>
@@ -63,7 +64,7 @@ NavdeepSaini<br/>
 YuzvendraChahal<br/>
 JoshPhillipe<br/>
 
-Sample Output for given sample input: </br>
+Sample Output -1: </br>
 --------------------------------------------
 
 The best 5 teams are::</br>
@@ -133,6 +134,39 @@ ShivamDube </br>
 DaleSteyn </br>
 YuzvendraChahal</br> 
 -------------------------------------</br>
+
+SampleInput -2 :<br/>
+----------------------
+create<br/>
+DavidWarner<br/>
+JonnyBairstow<br/>
+ManishPandey<br/>
+PriyamGarg<br/>
+VijayShankar<br/>
+MitchellMarsh<br/>
+AbhishekSharma<br/>
+RashidKhan<br/>
+BhuvneshwarKumar<br/>
+SandeepSma<br/>
+Natarajan<br/>
+AaronFinch<br/>
+Viratohli<br/>
+AbdeVillier<br/>
+DevduttPadikkal<br/>
+ShivamDube<br/>
+WashingtonSundar<br/>
+UmeshYadav<br/>
+DaleSteyn<br/>
+NavdeepSaini<br/>
+YuzvendraChahal<br/>
+JoshPhillipe<br/>
+
+SampleOutput-2 : <br/>
+-----------------------
+The following player/players were not found in the csv:<br/>
+SandeepSma<br/>
+Viratohli<br/>
+AbdeVillier<br/>
 
 # How to update the database after the match?
 I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)<br/>
