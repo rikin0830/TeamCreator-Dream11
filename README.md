@@ -225,6 +225,6 @@ This is my first github based project,so it is a little sloppy I guess,I hope I 
 Thank you for making it this far.<br/>
 I would like to thank<br/>
 1) iplt20.com for providing stats freely for anyone who wants to use them<br/>
-2) geeksforgeeks.com for using makeCombi function (line 53-line 73 in the code)<br/>
+2) geeksforgeeks.com for using makeCombi function (from line 53 to line 73 in the code)<br/>
 3) Google for having lots of info about players whose stats weren't available in iplt20.com(because  they didn't play previous IPL)<br/>
 4) BVS Sudhindra and codelover_22 from codeforces for brilliant insights and ideas when I was coding this project.<br/>
