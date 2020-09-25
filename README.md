@@ -63,6 +63,76 @@ NavdeepSaini<br/>
 YuzvendraChahal<br/>
 JoshPhillipe<br/>
 
+Sample Output for given sample input: </br>
+
+The best 5 teams are::</br>
+</br>
+Estimated points for team-1 = 566.82</br>
+DavidWarner(C) </br>
+JonnyBairstow </br>
+ManishPandey </br>
+RashidKhan </br>
+AaronFinch </br>
+AbdeVilliers </br>
+DevduttPadikkal(VC)</br> 
+ShivamDube </br>
+DaleSteyn </br>
+YuzvendraChahal</br> 
+JoshPhillipe </br>
+-------------------------------------</br>
+Estimated points for team-2 = 566.22</br>
+DavidWarner(C) </br>
+JonnyBairstow </br>
+ManishPandey </br>
+RashidKhan </br>
+AaronFinch </br>
+AbdeVilliers </br>
+DevduttPadikkal(VC)</br> 
+WashingtonSundar </br>
+DaleSteyn </br>
+YuzvendraChahal</br> 
+JoshPhillipe </br>
+-------------------------------------</br>
+Estimated points for team-3 = 565.607</br>
+DavidWarner(C) </br>
+JonnyBairstow </br>
+ManishPandey </br>
+SandeepSharma </br>
+AaronFinch </br>
+ViratKohli </br>
+AbdeVilliers </br>
+DevduttPadikkal(VC)</br> 
+ShivamDube </br>
+DaleSteyn </br>
+YuzvendraChahal</br> 
+-------------------------------------</br>
+Estimated points for team-4 = 565.007</br>
+DavidWarner(C) </br>
+JonnyBairstow </br>
+ManishPandey </br>
+SandeepSharma </br>
+AaronFinch </br>
+ViratKohli </br>
+AbdeVilliers </br>
+DevduttPadikkal(VC)</br> 
+WashingtonSundar </br>
+DaleSteyn </br>
+YuzvendraChahal</br> 
+-------------------------------------</br>
+Estimated points for team-5 = 563.229</br>
+DavidWarner(C) </br>
+JonnyBairstow </br>
+ManishPandey </br>
+PriyamGarg </br>
+RashidKhan </br>
+AaronFinch </br>
+AbdeVilliers </br>
+DevduttPadikkal(VC)</br> 
+ShivamDube </br>
+DaleSteyn </br>
+YuzvendraChahal</br> 
+-------------------------------------</br>
+
 # How to update the database after the match?
 I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)<br/>
 Write "update" in the first line of INPUT.txt,which is followed by 22 lines containing each player and number of points earned by him in that match.<br/>
