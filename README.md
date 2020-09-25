@@ -64,6 +64,7 @@ YuzvendraChahal<br/>
 JoshPhillipe<br/>
 
 Sample Output for given sample input: </br>
+--------------------------------------------
 
 The best 5 teams are::</br>
 </br>
