@@ -11,7 +11,7 @@ If you are a fan of cricket and know about Dream 11, with a little bit of C++ kn
 As we both know, there are many dream11 teams possible for a given match.<br/>
 Using simple math and the rule of minimum 4 players from each team,we can calculate the max number of teams possible is 644688.<br/>
 Note that we still didnt add constraints on total cost of team(<=100) and mininum and maximum from each category and we haven't even decided                        Captain and Vice-Captain yet.<br/>
-644688 maybe a big number for us,but for cpp compiler it isn't.<br/>
+644688 maybe a big number for us,but for our computer, it isn't.<br/>
 So we are going to use its power and give the playing 22 as input and extract the best 5 teams possible by considering all possible constraints.<br/>
 
 # Overview:
