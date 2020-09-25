@@ -206,3 +206,25 @@ JoshPhillipe 11<br/>
 
 SampleOutput:<br/>
 Update Complete <br/>
+
+# Few points to note :
+Make sure that D11CODE.cpp,INPUT.txt,OUTPUT.txt,STATS.csv remain in the same folder.<br/>
+Advantages of this code:
+------------------------
+1. You don't need to waste your time thinking of all combinations(one may think of 50 combinations at max) because the program has viewed over all possible team combinations (approx 3 lakh - 4 lakh possible teams) <br/>
+2. You can just make some tweaks to one of the best 5 teams that you find promising(based on form of a player,based on pitch , etc). <br/>
+
+Disadvantages of this code:
+---------------------------
+1. The main disadvantage of this code is that it can't recognize so-called "form" of a player. So you need to make some final tweaks after getting the output<br/>
+2. Dream11 is mainly based on luck,Even expert batsmen get run-out/ or a very young player who hasn't performed till that day,becomes Man of the match.<br/>
+   So this code can't predict these instances,which are dependant on pure luck.<br/>
+
+# Thank You Note:
+This is my first github based project,so it is a little sloppy I guess,I hope I didn't bore you :D
+Thank you for making it this far.<br/>
+I would like to thank<br/>
+1) iplt20.com for providing stats freely for anyone who wants to use them<br/>
+2) geeksforgeeks.com for using makeCombi function (line 53-line 73 in the code)<br/>
+3) Google for having lots of info about players whose stats weren't available in iplt20.com(because  they didn't play previous IPL)<br/>
+4) (codelover_22) from codeforces for brilliant insights and ideas when I was coding this project.<br/>
