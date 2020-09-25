@@ -208,7 +208,9 @@ SampleOutput:<br/>
 Update Complete <br/>
 
 # Few points to note :
+
 Make sure that D11CODE.cpp,INPUT.txt,OUTPUT.txt,STATS.csv remain in the same folder.<br/>
+
 Advantages of this code:
 ------------------------
 1. You don't need to waste your time thinking of all combinations(one may think of 50 combinations at max) because the program has viewed over all possible team combinations (approx 3 lakh - 4 lakh possible teams) <br/>
