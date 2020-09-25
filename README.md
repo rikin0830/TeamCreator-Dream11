@@ -168,6 +168,8 @@ SandeepSma<br/>
 Viratohli<br/>
 AbdeVillier<br/>
 
+Note that now I have deliberately introduced some typos in the sample input.<br/>
+But the code finds them out.Even in the next part(database update) the code first checks whether all players mentioned are in the csv or not and gives an error like this(SampleOutput-2) if any player is not available in the csv.<br/>
 # How to update the database after the match?
 I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)<br/>
 Write "update" in the first line of INPUT.txt,which is followed by 22 lines containing each player and number of points earned by him in that match.<br/>
@@ -201,3 +203,6 @@ DaleSteyn 27<br/>
 NavdeepSaini 62<br/>
 YuzvendraChahal 83 <br/>
 JoshPhillipe 11<br/>
+
+SampleOutput:<br/>
+Update Complete <br/>
