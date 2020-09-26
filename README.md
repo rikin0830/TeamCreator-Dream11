@@ -214,7 +214,7 @@ Update Complete <br/>
 # Few points to note :
 
 1. Make sure that D11CODE.cpp,INPUT.txt,OUTPUT.txt,STATS.csv remain in the same folder.<br/>
-2. Since database should be updated after every match the STATS.csv file will be updated and uploaded daily by 5pm.<br/>
+2. Since database should be updated after every match the STATS.csv file will be updated and uploaded daily by 5pm(during IPL 2020).<br/>
 
 Advantages of this project:
 ---------------------------
