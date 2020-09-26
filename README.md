@@ -176,7 +176,7 @@ But the code finds them out.Even in the next part(database update) the code firs
 I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)<br/>
 Write "update" in the first line of INPUT.txt,which is followed by 22 lines containing each player and number of points earned by him in that match.<br/>
 Case-(1): Due to typo,the player might not be found in the csv file. <br/>
-In that case the cod edoesn't execute at all and just reports all the players who weren't found in the csv file.<br/>
+In that case the code doesn't execute at all and just reports all the players who weren't found in the csv file.<br/>
 Case-(2): The code finds that all 22 players are available in the csv file,<br/>
 So it updates "avg points" aka Column 2 and "number of innings" aka Column 3 for each player.<br/>
 
@@ -212,6 +212,7 @@ Update Complete <br/>
 # Few points to note :
 
 Make sure that D11CODE.cpp,INPUT.txt,OUTPUT.txt,STATS.csv remain in the same folder.<br/>
+Since database should be updated after every match the STATS.csv file will be updated and uploaded daily by 5pm.<br/>
 
 Advantages of this code:
 ------------------------
