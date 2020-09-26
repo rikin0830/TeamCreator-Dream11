@@ -10,12 +10,12 @@ If you are a fan of cricket and know about Dream 11, with a little bit of C++ kn
 # Purpose of this project:
 As we both know, there are many dream11 teams possible for a given match.<br/>
 Using simple math and the rule of minimum 4 players from each team,we can calculate the max number of teams possible is 644688.<br/>
-Note that we still didnt add constraints on total cost of team(<=100) and mininum and maximum from each category and we haven't even decided                        Captain and Vice-Captain yet.<br/>
+Note that we still didnt add constraints on total cost of team(<=100) and minimum and maximum from each category and we haven't even decided                        Captain and Vice-Captain yet.<br/>
 644688 maybe a big number for us,but for our computer, it isn't.<br/>
 So we are going to use its power and give the playing 22 as input and extract the best 5 teams possible by considering all possible constraints.<br/>
 
 # Overview:
-I built a database/csv file using previous IPL stats from iplt20.com,<br/>
+I built a database/csv file(STATS.csv) using previous IPL stats from iplt20.com,<br/>
 In the case of a player who didn't play previous IPL I manually checked his profile and added an approxiamate analysis based entry to the database.<br/>
 The csv file consists of 5 columns:<br/>
 Column1 - Name of player<br/>
@@ -40,7 +40,7 @@ Case-(1):In case the code doesn't find a player mentioned in the input file,<br/
 The code doesn't execute and gives the names of players who weren't found.<br/>
 Case-(2):The code finds all players in the csv file and executes and prints the best 5 teams to OUTPUT.txt<br/>
 
-SampleInput -1 :<br/>
+SampleInput_1:<br/>
 ----------------------
 create<br/>
 DavidWarner<br/>
@@ -66,7 +66,7 @@ NavdeepSaini<br/>
 YuzvendraChahal<br/>
 JoshPhillipe<br/>
 
-Sample Output -1: </br>
+SampleOutput_1: </br>
 --------------------------------------------
 
 The best 5 teams are::</br>
@@ -137,7 +137,7 @@ DaleSteyn </br>
 YuzvendraChahal</br> 
 -------------------------------------</br>
 
-SampleInput -2 :<br/>
+SampleInput_2 :<br/>
 ----------------------
 create<br/>
 DavidWarner<br/>
@@ -163,7 +163,7 @@ NavdeepSaini<br/>
 YuzvendraChahal<br/>
 JoshPhillipe<br/>
 
-SampleOutput-2 : <br/>
+SampleOutput_2 : <br/>
 -----------------------
 The following player/players were not found in the csv:<br/>
 SandeepSma<br/>
@@ -175,6 +175,7 @@ But the code finds them out.Even in the next part(database update) the code firs
 # How to update the database after the match?
 I have taken standard input from INPUT.txt and standard output to OUTPUT.txt ,in sublime text,(If you don't want to use sublime then comment the stext function call in line 398 of the code)<br/>
 Write "update" in the first line of INPUT.txt,which is followed by 22 lines containing each player and number of points earned by him in that match.<br/>
+<br/>
 Case-(1): Due to typo,the player might not be found in the csv file. <br/>
 In that case the code doesn't execute at all and just reports all the players who weren't found in the csv file.<br/>
 Case-(2): The code finds that all 22 players are available in the csv file,<br/>
@@ -211,17 +212,18 @@ Update Complete <br/>
 
 # Few points to note :
 
-Make sure that D11CODE.cpp,INPUT.txt,OUTPUT.txt,STATS.csv remain in the same folder.<br/>
-Since database should be updated after every match the STATS.csv file will be updated and uploaded daily by 5pm.<br/>
+1. Make sure that D11CODE.cpp,INPUT.txt,OUTPUT.txt,STATS.csv remain in the same folder.<br/>
+2. Since database should be updated after every match the STATS.csv file will be updated and uploaded daily by 5pm.<br/>
 
-Advantages of this code:
-------------------------
+Advantages of this project:
+---------------------------
 1. You don't need to waste your time thinking of all combinations(one may think of 50 combinations at max) because the program has viewed over all possible team combinations (approx 3 lakh - 4 lakh possible teams) <br/>
 2. You can just make some tweaks to one of the best 5 teams that you find promising(based on form of a player,based on pitch , etc). <br/>
+3. Irrespective of the tournament(BBL,CWC,t20 CWC,etc), as long as you could create a database(csv file) at the start of the tournament in the format of     STATS.csv, this code can be used with that database too. (As the constraints remain same so the algorithm/code remains same)<br/>
 
-Disadvantages of this code:
----------------------------
-1. The main disadvantage of this code is that it can't recognize so-called "form" of a player. So you need to make some final tweaks after getting the output<br/>
+Drawbacks of this project:
+--------------------------
+1. The main drawback of this code is that it can't recognize so-called "form" of a player. So you need to make some final tweaks after getting the output.<br/>
 2. Dream11 is mainly based on luck,Even expert batsmen get run-out/ or a very young player who hasn't performed till that day,becomes Man of the match.<br/>
    So this code can't predict these instances,which are dependant on pure luck.<br/>
 
