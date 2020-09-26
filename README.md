@@ -182,7 +182,7 @@ Case-(2): The code finds that all 22 players are available in the csv file,<br/>
 So it updates "avg points" aka Column 2 and "number of innings" aka Column 3 for each player.<br/>
 
 SampleInput(Based on match on 21 sept 2020)for updating database:<br/>
-
+-----------------------------------------------------------------------
 update<br/>
 DavidWarner 11<br/>
 JonnyBairstow 101<br/>
@@ -208,6 +208,7 @@ YuzvendraChahal 83 <br/>
 JoshPhillipe 11<br/>
 
 SampleOutput:<br/>
+------------------
 Update Complete <br/>
 
 # Few points to note :
@@ -219,7 +220,7 @@ Advantages of this project:
 ---------------------------
 1. You don't need to waste your time thinking of all combinations(one may think of 50 combinations at max) because the program has viewed over all possible team combinations (approx 3 lakh - 4 lakh possible teams) <br/>
 2. You can just make some tweaks to one of the best 5 teams that you find promising(based on form of a player,based on pitch , etc). <br/>
-3. Irrespective of the tournament(BBL,CWC,t20 CWC,etc), as long as you could create a database(csv file) at the start of the tournament in the format of     STATS.csv, this code can be used with that database too. (As the constraints remain same so the algorithm/code remains same)<br/>
+3. Irrespective of the tournament(BBL,CWC,t20 CWC,etc),if you can create a database(csv file) at the start of the tournament in the format of STATS.csv, this code can be used along with that database too. (As the constraints remain same so the algorithm/code remains same)<br/>
 
 Drawbacks of this project:
 --------------------------
